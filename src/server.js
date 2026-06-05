@@ -23,7 +23,7 @@ const app = express();
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 
 // CORS
-app.use(cors({ origin: env.clientUrl, credentials: true }));
+app.use(cors({origin: "https://ved-grow-fsd-01-frontend.vercel.app", credentials: true }));
 
 // Logging
 if (env.nodeEnv === 'development') {
